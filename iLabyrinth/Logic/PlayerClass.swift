@@ -29,15 +29,17 @@ class Player {
         self.stepsHave -= 1
     }
     
-    func get(item: Inventory) {
+    func get(_ item: Inventory) {
         self.inventory.append(item)
     }
     
-    func drop(item: Inventory) {
+    func drop(_ item: Inventory) {
+        var i = 0
         for invent in self.inventory {
             if invent == item {
-                self.inventory.remove(at: invent.hashValue)
+                self.inventory.remove(at: i)
             }
+            i += 1
         }
     }
     

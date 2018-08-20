@@ -37,10 +37,12 @@ class Room {
     }
     
     func playerGet(_ item: Inventory) {
+        var i = 0
         for invent in self.inventory {
             if invent == item {
-                self.inventory.remove(at: invent.hashValue)
+                self.inventory.remove(at: i)
             }
+            i += 1
         }
     }
     
@@ -81,7 +83,7 @@ class Room {
     }
     
     func isTrap() -> Bool {
-        if self.directions.count < 2 {
+        if self.directions.count < 1 {
             return true
         } else {
             return false

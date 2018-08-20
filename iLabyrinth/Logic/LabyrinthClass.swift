@@ -113,8 +113,8 @@ class Labyrinth {
         initPerimeter(index: self.labySize - 1, way: .north)
         initPerimeter(index: self.labySize - 1, way: .east)
         
-        for i in 1..<self.labySize - 2 {
-            for j in 1..<self.labySize - 2 {
+        for i in 1..<self.labySize - 1 {
+            for j in 1..<self.labySize - 1 {
                 initCenter(x: i, y: j)
             }
         }

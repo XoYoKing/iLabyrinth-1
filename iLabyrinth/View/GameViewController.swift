@@ -9,6 +9,7 @@
 import UIKit
 import QuartzCore
 import SceneKit
+import AVFoundation
 
 class GameViewController: UIViewController {
     
@@ -27,27 +28,17 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let scnView = self.view as! SCNView
         scnView.scene = scene
         scnView.allowsCameraControl = true
         scnView.defaultCameraController.maximumVerticalAngle = 10
-        
-        let backgroundMusic = SCNAudioSource(named: "art.scnassets/Heartbeat.mp3")!
-        backgroundMusic.volume = 0.5
-        backgroundMusic.loops = true
-        backgroundMusic.load()
-        
-        self.scene.rootNode.runAction(SCNAction.playAudio(backgroundMusic, waitForCompletion: true))
         
         self.labyrinth = Labyrinth(level: self.level)
         self.player = Player()
         
         setUpButtoms()
         loadRoom()
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        scnView.addGestureRecognizer(tapGesture)
+        setUpTaps(view: scnView)
     }
     
     @objc
@@ -92,7 +83,7 @@ class GameViewController: UIViewController {
                 }
             case "key":
                 if thisRoom.Is(itemHere: .key) && !thisRoom.isDarkNow(player: self.player) {
-                    self.player.get(item: .key)
+                    self.player.get(.key)
                     thisRoom.playerGet(.key)
                     loadButtoms()
                     setUpInventory(in: thisRoom)
@@ -102,12 +93,13 @@ class GameViewController: UIViewController {
                 if thisRoom.Is(itemHere: .apple) && !thisRoom.isDarkNow(player: self.player) {
                     self.player.eatApple()
                     thisRoom.playerGet(.apple)
+                    loadButtoms()
                     setUpInventory(in: thisRoom)
                 }
                 
             case "torch":
                 if thisRoom.Is(itemHere: .torch) && !thisRoom.isDarkNow(player: self.player) {
-                    self.player.get(item: .torch)
+                    self.player.get(.torch)
                     thisRoom.playerGet(.torch)
                     loadButtoms()
                     setUpInventory(in: thisRoom)
@@ -116,6 +108,11 @@ class GameViewController: UIViewController {
             default: break
             }
         }
+    }
+    
+    @objc
+    func wrongTaps() {
+        print("wrong tap")
     }
     
     @objc
@@ -128,7 +125,7 @@ class GameViewController: UIViewController {
         let thisRoom = self.labyrinth.labyrinthMatrix[self.player.currentX][self.player.currentY]
         
         thisRoom.playerDrop(.torch)
-        self.player.drop(item: .torch)
+        self.player.drop(.torch)
         
         loadButtoms()
         setUpInventory(in: thisRoom)

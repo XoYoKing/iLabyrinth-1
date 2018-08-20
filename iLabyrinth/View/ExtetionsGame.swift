@@ -8,8 +8,34 @@
 
 import Foundation
 import UIKit
+import SceneKit
 
 extension GameViewController {
+    
+    func setUpTaps(view: SCNView) {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        view.addGestureRecognizer(tapGesture)
+        
+        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(wrongTaps))
+        doubleTap.numberOfTapsRequired = 2
+        view.addGestureRecognizer(doubleTap)
+        
+        let twoAndMoreFingersPan = UIPanGestureRecognizer(target: self, action: #selector(wrongTaps))
+        twoAndMoreFingersPan.minimumNumberOfTouches = 2
+        view.addGestureRecognizer(twoAndMoreFingersPan)
+        
+        let rotation = UIRotationGestureRecognizer(target: self, action: #selector(wrongTaps))
+        view.addGestureRecognizer(rotation)
+        
+        let pinch = UIPinchGestureRecognizer(target: self, action: #selector(wrongTaps))
+        view.addGestureRecognizer(pinch)
+        
+        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(wrongTaps))
+        view.addGestureRecognizer(swipe)
+        
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(wrongTaps))
+        view.addGestureRecognizer(longPress)
+    }
     
     func setUpButtoms () {
         let backButton = UIButton(frame: CGRect(x: 10, y: 30, width: 60, height: 30))
