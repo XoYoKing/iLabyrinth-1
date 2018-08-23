@@ -41,8 +41,9 @@ class Room {
         for invent in self.inventory {
             if invent == item {
                 self.inventory.remove(at: i)
+                return
             }
-            i += 1
+            i = i + 1
         }
     }
     

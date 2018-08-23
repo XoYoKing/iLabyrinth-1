@@ -55,17 +55,14 @@ class Labyrinth {
                 for i in 1..<self.labySize - 1 {
                     self.labyrinthMatrix[i][index].directions.append(.north)
                     self.labyrinthMatrix[i][index].directions.append(.south)
-                    if getRandom(min: 0, max: 2) == 1 {
-                        self.labyrinthMatrix[index][i].directions.append(.east)
-                    }
+                    self.labyrinthMatrix[i][index].directions.append(.east)
                 }
             } else {
                 for i in 1..<self.labySize - 1 {
                     self.labyrinthMatrix[i][index].directions.append(.north)
                     self.labyrinthMatrix[i][index].directions.append(.south)
-                    if getRandom(min: 0, max: 2) == 1 {
-                        self.labyrinthMatrix[index][i].directions.append(.west)
-                    }
+                    self.labyrinthMatrix[i][index].directions.append(.west)
+                    
                 }
             }
         } else {
@@ -73,24 +70,20 @@ class Labyrinth {
                 for i in 1..<self.labySize - 1 {
                     self.labyrinthMatrix[index][i].directions.append(.west)
                     self.labyrinthMatrix[index][i].directions.append(.east)
-                    if getRandom(min: 0, max: 2) == 1 {
-                        self.labyrinthMatrix[index][i].directions.append(.north)
-                    }
+                    self.labyrinthMatrix[index][i].directions.append(.north)
                 }
             } else {
                 for i in 1..<self.labySize - 1 {
                     self.labyrinthMatrix[index][i].directions.append(.west)
                     self.labyrinthMatrix[index][i].directions.append(.east)
-                    if getRandom(min: 0, max: 2) == 1 {
-                        self.labyrinthMatrix[index][i].directions.append(.south)
-                    }
+                    self.labyrinthMatrix[index][i].directions.append(.south)
                 }
             }
         }
     }
     
     func initCenter(x: Int, y: Int) {
-        let doors = getRandom(min: 1, max: 5)
+        let doors = getRandom(min: 2, max: 5)
         
         for _ in 1...doors {
             let way = getRandom(min: 0, max: 4)
