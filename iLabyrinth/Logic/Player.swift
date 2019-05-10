@@ -10,10 +10,10 @@ import Foundation
 
 class Player {
     
-    var currentX: Int
-    var currentY: Int
-    var stepsHave: Int
-    var inventory: [Inventory]
+    private(set) var currentX: Int
+    private(set) var currentY: Int
+    private(set) var stepsHave: Int
+    private(set) var inventory: [Inventory]
     
     init() {
         self.currentX = 0
@@ -56,5 +56,14 @@ class Player {
         }
         
         return false
+    }
+    
+    private func getXY(from direction: Directions, x: Int, y: Int) -> [Int] {
+        switch direction {
+        case .north: return [x + 1, y]
+        case .east: return [x, y + 1]
+        case .west: return [x, y - 1]
+        case .south: return [x - 1, y]
+        }
     }
 }

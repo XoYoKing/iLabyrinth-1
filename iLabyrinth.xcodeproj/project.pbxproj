@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA8CC1642128832F003ADFE3 /* ExtetionsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC1632128832F003ADFE3 /* ExtetionsGame.swift */; };
+		EA8CC1642128832F003ADFE3 /* ExtensionGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC1632128832F003ADFE3 /* ExtensionGame.swift */; };
 		EA8CC166212888D4003ADFE3 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC165212888D4003ADFE3 /* EndViewController.swift */; };
 		EACECC1B211313E8007E574D /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACECC1A211313E8007E574D /* EnterViewController.swift */; };
-		EACECC1D211317EB007E574D /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACECC1C211317EB007E574D /* Custom.swift */; };
 		EAE230C12112FE75005834BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE230C02112FE75005834BA /* AppDelegate.swift */; };
 		EAE230C32112FE75005834BA /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE230C22112FE75005834BA /* art.scnassets */; };
 		EAE230C52112FE75005834BA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE230C42112FE75005834BA /* GameViewController.swift */; };
@@ -19,9 +18,8 @@
 		EAE230CD2112FE75005834BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE230CB2112FE75005834BA /* LaunchScreen.storyboard */; };
 		EAE230D82112FE76005834BA /* iLabyrinthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE230D72112FE76005834BA /* iLabyrinthTests.swift */; };
 		EAE230E32112FE76005834BA /* iLabyrinthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE230E22112FE76005834BA /* iLabyrinthUITests.swift */; };
-		EAE230F12112FECE005834BA /* LabyrinthClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE230F02112FECE005834BA /* LabyrinthClass.swift */; };
-		EAE230F32112FEEE005834BA /* PlayerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE230F22112FEEE005834BA /* PlayerClass.swift */; };
-		EAE230F52112FF32005834BA /* RoomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE230F42112FF32005834BA /* RoomClass.swift */; };
+		EAE230F12112FECE005834BA /* Labyrinth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE230F02112FECE005834BA /* Labyrinth.swift */; };
+		EAE230F32112FEEE005834BA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE230F22112FEEE005834BA /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EA8CC1632128832F003ADFE3 /* ExtetionsGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtetionsGame.swift; sourceTree = "<group>"; };
+		EA8CC1632128832F003ADFE3 /* ExtensionGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionGame.swift; sourceTree = "<group>"; };
 		EA8CC165212888D4003ADFE3 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		EACECC1A211313E8007E574D /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
-		EACECC1C211317EB007E574D /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 		EAE230BD2112FE75005834BA /* iLabyrinth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLabyrinth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE230C02112FE75005834BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE230C22112FE75005834BA /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -60,9 +57,8 @@
 		EAE230DE2112FE76005834BA /* iLabyrinthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLabyrinthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE230E22112FE76005834BA /* iLabyrinthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLabyrinthUITests.swift; sourceTree = "<group>"; };
 		EAE230E42112FE76005834BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAE230F02112FECE005834BA /* LabyrinthClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabyrinthClass.swift; sourceTree = "<group>"; };
-		EAE230F22112FEEE005834BA /* PlayerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerClass.swift; sourceTree = "<group>"; };
-		EAE230F42112FF32005834BA /* RoomClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomClass.swift; sourceTree = "<group>"; };
+		EAE230F02112FECE005834BA /* Labyrinth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labyrinth.swift; sourceTree = "<group>"; };
+		EAE230F22112FEEE005834BA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +89,8 @@
 		EA8C3E23211866AE000FB055 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				EACECC1C211317EB007E574D /* Custom.swift */,
-				EAE230F02112FECE005834BA /* LabyrinthClass.swift */,
-				EAE230F42112FF32005834BA /* RoomClass.swift */,
-				EAE230F22112FEEE005834BA /* PlayerClass.swift */,
+				EAE230F02112FECE005834BA /* Labyrinth.swift */,
+				EAE230F22112FEEE005834BA /* Player.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -107,7 +101,7 @@
 				EACECC1A211313E8007E574D /* EnterViewController.swift */,
 				EA8CC165212888D4003ADFE3 /* EndViewController.swift */,
 				EAE230C42112FE75005834BA /* GameViewController.swift */,
-				EA8CC1632128832F003ADFE3 /* ExtetionsGame.swift */,
+				EA8CC1632128832F003ADFE3 /* ExtensionGame.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,20 +222,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "TONY COMPANY";
 				TargetAttributes = {
 					EAE230BC2112FE75005834BA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					EAE230D22112FE75005834BA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EAE230BC2112FE75005834BA;
 					};
 					EAE230DD2112FE76005834BA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EAE230BC2112FE75005834BA;
 					};
@@ -301,13 +298,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA8CC166212888D4003ADFE3 /* EndViewController.swift in Sources */,
-				EACECC1D211317EB007E574D /* Custom.swift in Sources */,
 				EAE230C52112FE75005834BA /* GameViewController.swift in Sources */,
 				EAE230C12112FE75005834BA /* AppDelegate.swift in Sources */,
-				EA8CC1642128832F003ADFE3 /* ExtetionsGame.swift in Sources */,
-				EAE230F12112FECE005834BA /* LabyrinthClass.swift in Sources */,
-				EAE230F32112FEEE005834BA /* PlayerClass.swift in Sources */,
-				EAE230F52112FF32005834BA /* RoomClass.swift in Sources */,
+				EA8CC1642128832F003ADFE3 /* ExtensionGame.swift in Sources */,
+				EAE230F12112FECE005834BA /* Labyrinth.swift in Sources */,
+				EAE230F32112FEEE005834BA /* Player.swift in Sources */,
 				EACECC1B211313E8007E574D /* EnterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +372,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -384,6 +380,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -434,6 +431,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -441,6 +439,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -480,7 +479,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TONY.iLabyrinth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -495,7 +494,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TONY.iLabyrinth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -511,7 +510,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TONY.iLabyrinthTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLabyrinth.app/iLabyrinth";
 			};
@@ -528,7 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TONY.iLabyrinthTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLabyrinth.app/iLabyrinth";
 			};
@@ -544,7 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TONY.iLabyrinthUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = iLabyrinth;
 			};
@@ -560,7 +559,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TONY.iLabyrinthUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = iLabyrinth;
 			};

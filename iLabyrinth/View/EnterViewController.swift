@@ -43,7 +43,7 @@ class EnterViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let controller = segue.destination as? GameViewController {
-            controller.level = sender! as! Levels
+            controller.level = sender! as? Levels
         }
     }
     

@@ -133,7 +133,7 @@ class GameViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let controller = segue.destination as? EndViewController {
-            controller.isWin = sender! as! Bool
+            controller.isWin = sender! as? Bool
         }
     }
     
